@@ -1,0 +1,22 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Specialitys List</h2> <button (click)="createSpeciality()" class="btn btn-info" style="margin-left: 10px">Create</button>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let speciality of specialitys">
+        <td>{{speciality.name}}</td>
+        <td>{{speciality.description}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

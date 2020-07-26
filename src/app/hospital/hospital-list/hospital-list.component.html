@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Hospitals List</h2> <button (click)="createHospital()" class="btn btn-info" style="margin-left: 10px">Create</button>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Hospital Name</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let hospital of hospitals">
+        <td>{{hospital.name}}</td>
+        <td>
+          <button (click)="updateHospital(hospital.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
